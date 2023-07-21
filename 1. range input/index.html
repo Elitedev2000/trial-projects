@@ -7,8 +7,10 @@
   </head>
   <body>
 
-    <span class="number">0</span>
+    <div style="margin: 20px">
+        <span class="number">0</span>
     <input type="range" value="0" />
+    </div>
 
     <script>
 
@@ -18,7 +20,7 @@
       input.addEventListener("input", () => {
         number.textContent = input.value;
       });
-      
+
     </script>
   </body>
 </html>
