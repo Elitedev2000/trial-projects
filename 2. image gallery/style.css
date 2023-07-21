@@ -15,13 +15,7 @@ margin-bottom: 50px;
 .title .primary {
     font-size: clamp(26px, 5vw, 52px);
     text-transform: uppercase;
-    color: #fff;
-}
-
-.title .secondary {
-    font-size: clamp(14px, 2.5vw, 16px);
-    font-weight: 400;
-    color: #d6d6e0;
+    color: blue;
 }
 
 .gallery-wrapper {
@@ -46,7 +40,7 @@ margin-bottom: 50px;
     flex: 5;
 }
 
-.gallery-item:not(hover) {
+.gallery-item:not(:hover) {
     opacity: 0.75;
 }
 
@@ -98,7 +92,7 @@ margin-bottom: 50px;
     transition-delay: 0s;
 }
 
-@media screen and (ma-width: 768px) {
+@media screen and (max-width: 768px) {
     .gallery-wrapper {
         flex-direction: column;
         height: 100vh;
