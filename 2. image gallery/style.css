@@ -98,3 +98,13 @@ margin-bottom: 50px;
     transition-delay: 0s;
 }
 
+@media screen and (ma-width: 768px) {
+    .gallery-wrapper {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .gallery-item:hover {
+        flex-basis: 100%;
+    }
+}
