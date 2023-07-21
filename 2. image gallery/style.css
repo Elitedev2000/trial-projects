@@ -72,3 +72,29 @@ margin-bottom: 50px;
     padding-inline: 10px;
     transform: translateY(-10px);
 }
+
+.role {
+    display: inline-block;
+    background: linear-gradient(90deg, #4136d9, #0086c7);
+    padding: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(10px);
+}
+
+.name, .role {
+    opacity: 0;
+    transition: opacity 0.25s;transform: 0.3s;
+    transition-delay: .35s;
+}
+
+.gallery-item:hover .name,
+.gallery-item:hover .role {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-item:not(:hover) .name,
+.gallery-item:not(:hover) .role {
+    transition-delay: 0s;
+}
+
