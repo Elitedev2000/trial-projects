@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Range Input</title>
-</head>
-<body>
-    
-    
+  </head>
+  <body>
 
-</body>
+    <span class="number">0</span>
+    <input type="range" value="0" />
+
+    <script>
+
+      const input = document.querySelector("input"),
+        number = document.querySelector(".number");
+
+      input.addEventListener("input", () => {
+        number.textContent = input.value;
+      });
+      
+    </script>
+  </body>
 </html>
